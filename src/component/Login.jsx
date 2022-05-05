@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom';
+import { makeStyles } from '@material-ui/core';
 import { useDispatch } from 'react-redux';
 import { useForm } from '../Hooks/useForm';
 import {  loginWithEmailPassAsync } from '../redux/action/actionLogin';
@@ -8,7 +9,6 @@ import googleIcon from '../assets/google.png';
 import facebookIcon from '../assets/facebook.png';
 
 //Material UI
-import { makeStyles } from '@material-ui/core';
 import { ButtonFacebook, ButtonGoogle, LinkRedirect } from '../styled/styledComponents';
 
 const Login = () => {

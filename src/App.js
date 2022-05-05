@@ -1,7 +1,7 @@
 import "./App.css";
 import Home from "./component/Home";
 import Navbar from "./component/Navbar";
-import { Routes ,Route } from 'react-router-dom';
+import { Routes ,Route, Router } from 'react-router-dom';
 import Products from "./component/Products";
 import Product from "./component/Product";
 import Cart from "./component/Cart";
@@ -11,6 +11,7 @@ import Contact from "./component/Contact";
 import PaymentForms from "../src/js/PaymentForms";
 import PaymentForm from "../src/js/PaymentForm";
 import Checkout from "./component/Checkout";
+import About from './component/About';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Route path='/register' element={<Register/>} />
       <Route path='/contact' element={<Contact/>} />
       <Route path='/Checkout' element={<Checkout/>} />
+      <Route path='/about' element={<About/>} />
       </Routes>
      
     </>
