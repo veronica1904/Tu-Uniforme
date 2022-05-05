@@ -16,16 +16,16 @@ const Product = () => {
     const addProduct = (product) => {
         dispatch(addCart(product));
     }
-    const getProduct = async () => {
-        setLoading(true);
-        const response = await fetch(`https://fakestoreapi.com/products/${id}`);
-        setProduct(await response.json());
-        setLoading(false);
-    }
-    useEffect(() => {
+    // const getProduct = async () => {
+    //     setLoading(true);
+    //     const response = await fetch(`https://fakestoreapi.com/products/${id}`);
+    //     setProduct(await response.json());
+    //     setLoading(false);
+    // }
+    // useEffect(() => {
        
-        getProduct();
-    }, []);
+    //     getProduct();
+    // }, []);
 
     const Loading = () => {
         return(
